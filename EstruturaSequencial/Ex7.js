@@ -2,11 +2,11 @@
 const prompt = require("readline-sync")
 
 
-const valorHora = Number(prompt.question("Quanto você ganha por hora?"));
-const horasTrabalhadasMes = Number(prompt.question("Quantas horas você trabalhou no mês"));
+const valorHora = Number(prompt.question("Quanto você ganha por hora?")); //entrada de dados do usuário
+const horasTrabalhadasMes = Number(prompt.question("Quantas horas você trabalhou no mês"));//entrada de dados do usuário
 
-function salarioMensal() {
+function salarioMensal() { //função para descobrir salario mensla
     return valorHora * horasTrabalhadasMes
 }
 
-console.log(`Seu salário mensal nesse mês é de: ${salarioMensal()}`)
+console.log(`Seu salário mensal nesse mês é de: R$${salarioMensal()}`) // exibindo salário mensal
