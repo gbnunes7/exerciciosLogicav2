@@ -1,0 +1,32 @@
+// Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+//                       Até 5 Kg           Acima de 5 Kg
+// Morango         R$ 2,50 por Kg          R$ 2,20 por Kg
+// Maçã            R$ 1,80 por Kg          R$ 1,50 por Kg
+// Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00, receberá ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de morangos ou quantidade (em Kg) de maças adquiridas e escreva o valor a ser pago pelo cliente.
+
+const prompt = require('readline-sync');
+
+const fruta = prompt.question("Qual fruta você deseja comprar?").toLowerCase();
+const qtdFruta = Number(prompt.question("Quantos kg de fruta você quer comprar?"))
+
+function compra(fruta,qtdFruta) {
+    let preco;
+    switch(fruta) {
+        case "morango":
+            preco = qtdFruta <= 5 ? (2.50*qtdFruta) : (2.20*qtdFruta);
+            break;
+        case "maça":
+        case "maca":
+        case "maçã":
+            preco = qtdFruta <= 5? (1.80*qtdFruta) : (1.50*qtdFruta);
+            break
+        default:
+            console.log("Fruta não encontrada")
+            return;
+    }
+
+    const precoAPagar = qtdFruta > 8 || preco > 25 ? preco - (preco*0.10) : preco;
+    console.log(qtdFruta, fruta,precoAPagar)
+}
+
+compra(fruta,qtdFruta)
