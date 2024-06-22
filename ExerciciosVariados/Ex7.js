@@ -4,4 +4,4 @@ function isEven(n){
     return n % 2 === 0 ? "par" : "ímpar"
 }
 
-console.log(isEven(10))
+console.log(isEven(7))
