@@ -1,6 +1,7 @@
+// Given an integer x, return true if x is a 
+// palindrome
+// , and false otherwise.
 
-let  number = 121
-const temp = number.toString().split("").reverse().join("")
-
-console.log(Number(temp))
-console.log(number)
+var isPalindrome = function(x) {
+    return x==x.toString().split("").reverse().join("")
+};
