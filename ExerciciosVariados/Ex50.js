@@ -1,4 +1,4 @@
-
+// criando classe stack e fazendo exercicio binário
 class Stack {
     constructor(){
         this.items = []
@@ -29,7 +29,7 @@ function decimalToBinary(decNumber) {
         stackBinary.add(rem); // push resto para a stack
         number = Math.floor(number / 2); // depois o numero é divido por 2 e repete a lógica
     }
-    console.log(stackBinary)
+
     while (!stackBinary.isEmpty()) {
         binaryString += stackBinary.remove().toString() // a stack vai sendo removida e adicionada a binarystring pelo principio lifo
     }
@@ -38,3 +38,20 @@ function decimalToBinary(decNumber) {
 }
 
 console.log(decimalToBinary(233))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

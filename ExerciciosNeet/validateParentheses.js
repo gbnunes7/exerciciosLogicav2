@@ -26,7 +26,7 @@ function validateParentheses(s) {
         }
     }
 
-    return stack.length === 0
+    return stack.length === 0 // retorna true (caso todos sejam empilhados, desempilhados e a stack fique 0)
 
 }
 
