@@ -1,14 +1,17 @@
 //Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.
 
-function findAllIndices(str, char) {
-    let indices = [];
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === char) {
-            indices.push(i);
+function toCamelCase(str){
+    const arr = str.split("")
+  
+    for (let i = 0 ; i < arr.length ; i++) {
+        if(arr[i] == '-' || arr[i] == '_') {
+            arr[i+1] = arr[i+1].toUpperCase()
         }
     }
-    return indices;
-}
+  
+    str = arr.join("").replaceAll('-','').replaceAll('_','')
+  
+    return str
+  }
 
-const indices = findAllIndices("the-stealth-warrior", "-")
-console.log(indices)
+  console.log(toCamelCase("gabriel-l__---jUHRR-Farw_indo"))
