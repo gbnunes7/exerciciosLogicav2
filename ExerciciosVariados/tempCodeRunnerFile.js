@@ -1,1 +1,1 @@
-[j]
+console.log(string)
