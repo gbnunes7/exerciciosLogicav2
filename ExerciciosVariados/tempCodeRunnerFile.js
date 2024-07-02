@@ -1,1 +1,1 @@
-console.log(string)
++ 1
