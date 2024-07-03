@@ -3,8 +3,6 @@
 function isPalindrome(s) {
         s = s.replace(/[^a-zA-Z0-9]/g, '');
         const sReverse = s.split('').reverse().join('')
-        console.log(sReverse.toLowerCase())
-        console.log(s.toLowerCase())
         return s.toLowerCase()  == sReverse.toLowerCase() 
     }
 
