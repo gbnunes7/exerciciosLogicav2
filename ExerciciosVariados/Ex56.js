@@ -1,15 +1,15 @@
-const array = [1,2,3,4,5,6,7,8]
-
-const n1 = array[0]
-let nSequencial = 0
-
-for (let i = 1; i < array.length - 1; i++) {
-    if (array[i] + n1 != array[i + 1]) {
-        nSequencial = array[i+ 1] 
-        break
-    } else if (array[i] + n1 == array[i + 1]){
-        nSequencial = null
+function firstNonConsecutive (arr) {
+    if (!arr || arr.length === 0) {
+      return null
     }
-}
-
-console.log(nSequencial)
+    
+    const n1 = arr[0]
+    let nSequencial = 0
+    
+   for (let i = 1; i < arr.length; i++) {
+      if (arr[i] !== arr[i - 1] + 1) {
+        return arr[i];
+      }
+    }
+      return null
+  }

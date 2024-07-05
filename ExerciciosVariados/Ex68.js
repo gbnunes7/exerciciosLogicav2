@@ -2,7 +2,7 @@ function isPangram(string){
     const set = new Set()
     const abc = "abcdefghijklmnopqrstuvxwyz"
 
-    for(let char of string) {
+    for(let char of string.toLowerCase()) {
         if(abc.includes(char)){
             set.add(char)
         }
@@ -15,7 +15,6 @@ function isPangram(string){
     }
 
     return true
-
 
   }
 
