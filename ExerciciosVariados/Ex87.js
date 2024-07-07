@@ -1,10 +1,18 @@
-function findOdd(A) {
-    const objeto = {};
-    for (let i = 0; i < A.length; i++) {
-    objeto[i] = A[i];
-}
-
-console.log(objeto);
+function findOdd(arr) {
+    // Cria um objeto para contar as ocorrências de cada número
+    const count = {};
+  
+    // Itera pelo array e conta as ocorrências de cada número
+    for (let num of arr) {
+      count[num] = (count[num] || 0) + 1;
+    }
+  
+    // Itera pelo objeto para encontrar o número com contagem ímpar
+    for (let num in count) {
+      if (count[num] % 2 !== 0) {
+        return parseInt(num);
+      }
+    }
   }
 
-  findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]) 
+let teste = 'teste'
