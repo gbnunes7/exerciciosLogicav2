@@ -1,1 +1,1 @@
-console.log(Math.min(set))
+console.log(arraySorted)
