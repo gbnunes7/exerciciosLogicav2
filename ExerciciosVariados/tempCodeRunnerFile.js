@@ -1,1 +1,1 @@
-console.log(arraySorted)
+map(Number)
