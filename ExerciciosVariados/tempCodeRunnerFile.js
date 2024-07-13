@@ -1,1 +1,1 @@
-map(Number)
+ f
