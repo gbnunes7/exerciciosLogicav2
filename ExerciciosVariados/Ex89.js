@@ -1,4 +1,7 @@
 function order(words){
+    if(words.length === 0){
+        return ""
+    }
     words = words.split(" ")
     return words.sort((a,b) =>{
         const numA = a.match(/\d/)[0];

@@ -15,7 +15,5 @@ function checkExam(array1, array2) {
             numSoma += 4
         }
     }
-    return numSoma
+    return numSoma < 0 ? 0 : numSoma
    }
-
-   console.log(checkExam(["a", "a", "c", "b"], ["a", "a", "b",  ""]))

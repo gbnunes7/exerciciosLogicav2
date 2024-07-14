@@ -1,12 +1,16 @@
 function removeSmallest(numbers) {
-    if(numbers.length === 0){
-        return []
+    if (numbers.length === 0) {
+        return [];
     }
-    const set = new Set(numbers)
-    const min = Math.min(...set)
-    set.delete(min)
+
+    // Find the minimum value in the array
+    const min = Math.min(...numbers);
     
-    
-    return Array.from(set)
+    // Remove the first occurrence of the minimum value
+    const index = numbers.indexOf(min);
+    if (index > -1) {
+        numbers.splice(index, 1);
+    }
+
+    return numbers;
 }
-console.log(removeSmallest([1, 2, 2, 3, 4, 5]))
