@@ -5,7 +5,7 @@ function pipeFix(numbers){
     for(let i = nFirst ; i < nLast ; i++) {
       n.push(numbers[0] += 1)  
     }
-    console.log(n)  
+    return n 
   }
 
 

@@ -1,5 +1,4 @@
 function duplicateCount(text){
-    let count = 0
     let set = new Set()
     text = text.toLowerCase().split('').sort()
     for(let i = 0; i < text.length ; i++) {

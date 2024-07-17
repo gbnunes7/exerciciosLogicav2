@@ -7,7 +7,7 @@ function findShort(s){
             menorString = s[i].length
         }
     }
-    console.log(menorString)
+    return menorString
  
 }
 
