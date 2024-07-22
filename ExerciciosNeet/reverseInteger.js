@@ -4,8 +4,6 @@ var reverse = function(x) {
         x.pop()
         x.unshift('-')
      }
-    x = x.join('')
-    return parseInt(x)
+    x = parseInt(x.join(''))
+     return x <= 2147483647 && x >= -2147483648 ? x : 0;
 };
-
-console.log(reverse(-123))
