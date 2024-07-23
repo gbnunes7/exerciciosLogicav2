@@ -8,3 +8,7 @@ function sumOfMinimums(arr) {
 }
 
 console.log(sumOfMinimums([[1,2,4],[123,5]]))
+
+export default function ola() {
+    return "olá"
+}

@@ -1,1 +1,3 @@
-arrMin.push(arr[i][j])
+function findMaxNumberArr(arr) {
+//     return Math.max(...arr)
+// }
