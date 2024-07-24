@@ -3,7 +3,5 @@ var countSheep = function (num){
     for(let i = 1 ; i <= num ; i++) {
       string += `${i} sheep...`
     }
-    return string 
+    return num > 0 ? string : ""
   }
-
-  console.log(countSheep(3))

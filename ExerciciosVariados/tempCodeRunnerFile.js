@@ -1,3 +1,3 @@
-function findMaxNumberArr(arr) {
-//     return Math.max(...arr)
-// }
+if(word[i] !== word[i+1]) {
+        result += isntDuplicate
+      }
