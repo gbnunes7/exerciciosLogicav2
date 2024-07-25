@@ -16,3 +16,5 @@ function duplicateEncode(word){
 }
 
 console.log(duplicateEncode("ggg"))
+
+// Big O (n²)
