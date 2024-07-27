@@ -1,3 +1,1 @@
-if(word[i] !== word[i+1]) {
-        result += isntDuplicate
-      }
+index
