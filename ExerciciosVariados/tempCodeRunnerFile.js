@@ -1,1 +1,1 @@
-index
+numbers = parseInt(numbers)
